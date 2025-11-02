@@ -28,15 +28,16 @@ export class Casa{
     agregarMiembro(personaje) {
         if ( personaje instanceof Personaje) {
             this.#miembros.push(personaje);
+            console.log(`${personaje.obtenerNombre} ha sido añadido a la casa ${this.#nombre}`);
         } else {
             console.log('no se ha introducido un personaje');
         }
     }
 
     listarMiembros() {
-        console.log('Personajes de la casa ' + this.#nombre);
+        console.log('Miembros de la casa  ' + this.#nombre);
         for (const element of this.#miembros) {
-            console.log(element);
+            console.log(`- ${element.obtenerNombre}`);
         }
     }
 }
