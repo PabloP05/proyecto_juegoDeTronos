@@ -1,5 +1,5 @@
 import { Casa } from "./casas.js";
-import { Arma } from "./arma.js";
+
 
 
 export class Personaje {
@@ -8,7 +8,6 @@ export class Personaje {
     #estado = true;
     #casa;
     #vida;
-    #arma;
 
     constructor(nombre = '', edad = '') {
         this.#edad = edad;
@@ -40,14 +39,7 @@ export class Personaje {
         return this.#vida
     }
 
-//aqui equipamos el arma al  personaje
-    equiparArma(arma) {
-        if (arma instanceof Arma) {
-            this.#arma=arma;
-            console.log(`${this.#nombre} ha equipado el arama ${this.#arma.obtenerNombre}`);
-        }
-        
-    }
+
 
     saludar() {
         console.log(`Soy ${this.#nombre} de la casa ${this.#casa.obtenerNombre}`);

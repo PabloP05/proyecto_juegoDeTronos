@@ -1,6 +1,5 @@
 import { Casa } from "./casas.js";
-import { Personaje } from "./personaje.js";
-
+import { Rey } from "../personajes/rey.js";
 
 export class Reino{
     #nombre;
@@ -17,7 +16,7 @@ export class Reino{
     }
 
     nombrarRey(personaje) {
-        if (personaje instanceof Personaje) {
+        if (personaje instanceof Rey) {
             this.#rey = personaje;
             console.log(`${personaje.obtenerNombre} ha sido proclamado rey de ${this.#nombre}`);
         }
@@ -38,8 +37,7 @@ export class Reino{
     }
 
     informacionDelRey() {
-
-        console.log(`El rey actual es ${this.#rey.obtenerNombre} de la casa ${this.#rey.obtenerCasa.obtenerNombre}`);
+        console.log(`El rey actual es ${this.#rey.obtenerNombre} de la casa ${this.#rey.obtenerCasa.obtenerNombre} y mi reinado se extiende en ${this.#rey.obtenerAnios}`);
     }
 
 }
