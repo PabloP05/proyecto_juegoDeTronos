@@ -19,6 +19,6 @@ export class Consejero extends Personaje{
         console.log(`${this.obtenerNombre} no lucha con armas, si no con palabras e inteligencia`);
     }
     aconsejar(rey) {
-        console.log(`el consejero ${this.obtenerNombre} aconseja a ${rey.obtenerNombre}`);
+        console.log(`el consejero ${this.obtenerNombre} aconseja a ${rey.obtenerNombre} sobre ${this.#especialidad}`);
     }
 }

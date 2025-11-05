@@ -18,7 +18,7 @@ let arma2 = new Arma(10, 'espada', 'garra');
 
 let personaje1 = new Guerrero('Jon snow', 20);
 let personaje2 = new Guerrero('Aray stark ', 20);
-let personaje3 = new Consejero('Tyron Lannister', 20, 'consejo');
+let personaje3 = new Consejero('Tyron Lannister', 20, 'Politica');
 let personaje4 = new Rey('Robert baratheon', 20);
 
 
