@@ -25,6 +25,11 @@ export class Casa{
         return this.#nombre;
     }
 
+    get obtenerMiembros() {
+        return this.#miembros;
+    }
+
+    
     agregarMiembro(personaje) {
         if ( personaje instanceof Personaje) {
             this.#miembros.push(personaje);

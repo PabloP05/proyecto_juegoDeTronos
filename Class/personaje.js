@@ -5,22 +5,19 @@ import { Casa } from "./casas.js";
 export class Personaje {
     #nombre;
     #edad;
-    #estado = true;
+    
     #casa;
-    #vida;
+
 
     constructor(nombre = '', edad = '') {
         this.#edad = edad;
         this.#nombre = nombre;
         this.#casa = '';
-        this.#estado = true;
-        this.#vida = 100;
+       
     }
 
 
-    set vida(vida) {
-        this.#vida = vida;
-    }
+
 
 
     get obtenerNombre() {
@@ -35,9 +32,7 @@ export class Personaje {
     get obtenerEdad() {
         return this.#edad;
     }
-    get obtenerVida() {
-        return this.#vida
-    }
+
 
 
 
