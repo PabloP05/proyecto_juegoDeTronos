@@ -16,7 +16,7 @@ export class Batalla{
             } else {
                 mayor = guerrerosCasa1;
             }
-            
+
             for (let i = 0; i < mayor.length; i++){
                 this.#luchar(guerrerosCasa2[i], guerrerosCasa1[i]);
                 this.#luchar(guerrerosCasa1[i], guerrerosCasa2[i]);
