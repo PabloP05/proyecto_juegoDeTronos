@@ -64,8 +64,8 @@ casaLannister.agregarMiembro(gregor);
 casaStark.listarMiembros();
 casaLannister.listarMiembros();
 
+ console.log("\n \n -------- FASE 3 ------------- \n\n");
+
 
 const batallaBastardos = new Batalla();
 batallaBastardos.iniciarBatalla(casaStark,casaLannister);
-
-batallaBastardos.mostrarGuerrerosMuertosEnBatalla();
