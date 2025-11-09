@@ -68,4 +68,4 @@ casaLannister.listarMiembros();
 
 
 const batallaBastardos = new Batalla();
-batallaBastardos.iniciarBatalla(casaStark,casaLannister);
+batallaBastardos.iniciarBatalla(casaLannister,casaStark);

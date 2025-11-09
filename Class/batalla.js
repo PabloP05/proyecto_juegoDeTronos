@@ -46,7 +46,7 @@ export class Batalla{
         }
 
          if (guerreo1.obtenerVida > 0) {
-            guerreo2.atacar(guerreo2);
+            guerreo2.atacar(guerreo1);
         }
 
         if (guerreo1.obtenerVida <= 0) {
@@ -69,10 +69,10 @@ export class Batalla{
     }
 
     #resultadoDeLaBatalla(guerreos1,guerreros2,casa1,casa2){
-        let vivosCasa1 = guerreos1.filter(n =>this.#guerrerosCasa1.obtenerVida>0);
-         let vivosCasa2 = guerreros2.filter(n =>this.#guerrerosCasa2.obtenerVida>0);
+        let vivosCasa1 = guerreos1.filter(n =>n.obtenerVida>0);
+         let vivosCasa2 = guerreros2.filter(n =>n.obtenerVida>0);
 
-        let ganador = (vivosCasa2.length>vivosCasa1.length) ? casa1.obtenerNombre:casa2.obtenerNombre;
+        let ganador = (vivosCasa2.length>vivosCasa1.length) ? casa2.obtenerNombre:casa1.obtenerNombre;
 
         console.log(`La casa ganadora es : ${ganador}`);
 
